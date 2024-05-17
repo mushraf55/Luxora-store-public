@@ -1,0 +1,235 @@
+.main{
+    margin-top: 60px;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+  }
+ @media (max-width: 1600px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+  
+ @media (max-width: 1300px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+ }
+  
+ @media (max-width: 1000px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+   .hero1 h1{
+    font-size: 30px;
+   }
+   .outer-div img{
+    display: none;
+   }
+   .text p{
+    display: none;
+   }
+ }
+  
+ @media (max-width: 800px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .main-remove{
+      display: none;
+    }
+ }
+  
+ @media (max-width: 575px) {
+    .products-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .main-remove{
+      display: none;
+    }
+    .footer-flex{
+      flex-direction: column;
+    }
+ }
+  
+ @media (max-width: 450px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    .main-remove{
+      display: none;
+    }
+ }
+.product-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .outer-div img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .product-name {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .product-rating-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .product-rating-stars {
+    width: 100px;
+    margin-right: 6px;
+  }
+  
+  .product-price {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .product-quantity-container {
+    margin-bottom: 17px;
+  }
+  
+  .product-spacer {
+    flex: 1;
+  }
+  
+  .added-to-cart {
+    color: rgb(6, 125, 98);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    opacity: 0;
+  }
+  
+  .added-to-cart img {
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .add-to-cart-button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 0.2s all;
+  }
+  .add-to-cart-button:hover{
+    background-color: rgb(82, 82, 82);
+    transition: 0.2s all;
+  }
+  .add-to-cart-button:active{
+    background-color: rgb(48, 48, 48);
+
+  }
+ 
+  .cart-quantity{
+    background-color: rgb(251, 92, 92);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    margin-left: -20px;
+    padding-left: 10px;
+  }
+  .fa-bag-shopping{
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  /*-----hero-section-style-------*/
+  .hero-style{
+    height: 90vh; 
+}
+.hero1{
+    font-family: "Kaisei Decol", serif;
+    font-size: 4em;
+    padding: 10px;
+}
+.text p{
+    padding: 10px;
+}
+.outer-div{
+  
+    border: none;
+    border-radius: 30% 13% 46% 7% / 39% 10% 30% 9% ;
+    background-color: #F5F3D9;
+    box-shadow:inset rgba(60, 70, 85, 0.5) 0px 0px 40px 0px, rgba(0, 0, 0, .3) 0px 30px 100px -24px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*---footer---*/
+.about-dev{
+  display: flex;
+  flex-direction: column;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright{
+  font-size: 20px;
+}
+.about-dev-heading{
+  font-size: 20px;
+}
+.social-ids{
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.social-ids a{
+  color: black;
+  text-decoration: none;
+
+}
+.hr-style{
+  border: 1px solid ;
+}
+.footer-color{
+  padding: 30px 0;
+
+}
